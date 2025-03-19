@@ -336,3 +336,29 @@ footer .btn.btn--download:hover {
 footer .btn.btn--download span {
 	color: hsl(269, 100%, 94%);
 }
+
+/* Media Queries */
+
+@media (min-width: 770px) {
+	.hero__title {
+		padding: 2rem 15rem 0.5rem;
+		font-size: 3rem;
+	}
+
+	.hero__description {
+		padding: 0 10rem 0.5rem;
+	}
+
+	.btn.btn--download {
+		width: 50%;
+		grid-column-start: 1;
+		grid-column-end: 2;
+		margin-left: 12rem;
+	}
+
+	.btn.btn--info {
+		width: 43%;
+		grid-column-start: 2;
+		margin-right: 12rem;
+	}
+}
