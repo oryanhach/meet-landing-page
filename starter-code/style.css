@@ -179,6 +179,11 @@ button {
 	background-color: var(--clr-cyan-600);
 }
 
+.btn.btn--download:hover {
+	background-color: hsl(192, 64%, 63%);
+	cursor: pointer;
+}
+
 .btn.btn--info {
 	grid-column: 1 / 3;
 	display: block;
@@ -261,7 +266,7 @@ main .vertical__line {
 }
 
 .features__title {
-	margin: 0.75rem 0 2rem 0;
+	margin: 0.75rem 0 2.5rem 0;
 	font-size: 2rem;
 	line-height: var(--lh-800);
 	letter-spacing: var(--ls-800);
@@ -306,7 +311,7 @@ main .vertical__line {
 	font-weight: var(--fw-black);
 	font-size: 2rem;
 	line-height: var(--lh-800);
-	margin: 3rem 0 1rem;
+	margin: 5rem 0 1rem;
 	z-index: 1;
 }
 
@@ -321,4 +326,13 @@ footer .btn.btn--download {
 	margin-bottom: 4rem;
 	z-index: 1;
 	width: 60%;
+}
+
+footer .btn.btn--download:hover {
+	background-color: hsl(268, 63%, 75%);
+	cursor: pointer;
+}
+
+footer .btn.btn--download span {
+	color: hsl(269, 100%, 94%);
 }
