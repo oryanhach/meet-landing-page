@@ -334,12 +334,16 @@ footer .btn.btn--download:hover {
 }
 
 footer .btn.btn--download span {
-	color: hsl(269, 100%, 94%);
+	color: var(--clr-purple-300);
 }
 
 /* Media Queries */
 
 @media (min-width: 770px) {
+	body {
+		overflow-x: hidden;
+	}
+
 	.hero__title {
 		padding: 2rem 15rem 0.5rem;
 		font-size: 3rem;
@@ -360,5 +364,46 @@ footer .btn.btn--download span {
 		width: 43%;
 		grid-column-start: 2;
 		margin-right: 12rem;
+		margin-bottom: 4rem;
+	}
+
+	.features__grid {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		gap: 1.3rem;
+	}
+
+	.features__subtitle {
+		font-size: 1.1rem;
+	}
+
+	.features__title {
+		font-size: 2.3rem;
+		padding: 0 5.5rem;
+	}
+
+	.features__description {
+		font-size: 1.2rem;
+		padding: 0 5rem;
+		line-height: 130%;
+	}
+
+	.footer {
+		background-image: url(assets/tablet/image-footer.jpg);
+	}
+
+	.footer__title {
+		margin: 4rem 0 1.5rem;
+		font-size: 2.2rem;
+	}
+
+	.footer__description {
+		padding: 0 6rem;
+		margin-bottom: 1.7rem;
+	}
+
+	footer .btn.btn--download {
+		width: 30%;
+		margin: 0 auto 4rem;
 	}
 }
