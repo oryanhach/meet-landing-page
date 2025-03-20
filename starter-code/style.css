@@ -129,9 +129,6 @@ body {
 	row-gap: 1.2rem;
 }
 
-.hero__image {
-}
-
 .hero__image--left {
 	position: relative;
 	right: 1rem;
@@ -405,5 +402,126 @@ footer .btn.btn--download span {
 	footer .btn.btn--download {
 		width: 30%;
 		margin: 0 auto 4rem;
+	}
+}
+
+@media (min-width: 1440px) {
+	.hero {
+		grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+		grid-template-rows: 1fr 0.2fr 1fr;
+	}
+
+	.hero__image--left {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 4;
+	}
+
+	.hero__image--right {
+		grid-column-start: 4;
+		grid-column-end: 5;
+		grid-row-start: 1;
+		grid-row-end: 4;
+		left: 5rem;
+	}
+
+	.hero__title {
+		grid-column-start: 2;
+		grid-column-end: 4;
+		grid-row-start: 1;
+		grid-row-end: 2;
+
+		font-size: var(--fs-900);
+		margin-top: 0;
+		padding: 2rem 0 0;
+		margin-bottom: 0.5rem;
+	}
+
+	.hero__description {
+		grid-column-start: 2;
+		grid-column-end: 4;
+		grid-row-start: 2;
+		grid-row-end: 3;
+
+		padding: 0 2rem;
+	}
+
+	.btn.btn--download {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 3;
+		grid-row-end: 4;
+
+		margin-left: 3.8rem;
+		width: 80%;
+	}
+
+	.btn.btn--info {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 3;
+		grid-row-end: 4;
+
+		margin-right: 3.8rem;
+		width: 60%;
+	}
+
+	main .vertical__line {
+		margin-top: 0rem;
+	}
+
+	.features__grid {
+		margin: 3.5rem 10rem;
+		gap: 2rem;
+	}
+
+	.features__subtitle {
+		letter-spacing: 3px;
+	}
+
+	.features__title {
+		padding: 0 30rem;
+		margin-bottom: 1.7rem;
+	}
+
+	.features__description {
+		padding: 0 30rem;
+		font-size: 1.1rem;
+	}
+
+	.footer {
+		background-image: url(assets/desktop/image-footer.jpg);
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		height: 20rem;
+		text-align: left;
+		align-items: center;
+		padding: 0;
+	}
+
+	.footer__title {
+		font-size: 2.5rem;
+		grid-column-start: 1;
+		grid-column-end: 2;
+		margin: 0;
+		margin-left: 8rem;
+	}
+
+	.footer__description {
+		font-size: 1.2rem;
+		grid-column-start: 2;
+		grid-column-end: 3;
+		margin: 0;
+		padding: 0;
+		margin-left: 10rem;
+	}
+
+	footer .btn.btn--download {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		margin: 0;
+		grid-row: 1;
+		width: 38%;
 	}
 }
